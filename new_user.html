@@ -9,10 +9,8 @@
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
-      background-image: url('https://i.ibb.co/FYhRX0z/academy.png');
-      background-size: 25%;
-      background-position: center;
-      background-repeat: no-repeat;
+      background: url('https://script.google.com/macros/s/AKfycbzVbLVdK1Xet0Gpm8eDWm1ZjHGdWZyxlb00FqMn4IaIN9ZOf8bgVGxGr6QDfGo3xYli/exec');
+      
     }
     .navigation {
       height: 55px;
@@ -262,7 +260,7 @@
   </div>
 </section>
 <div class="content">
-  <iframe id="contentFrame" src="" height="750" width="100%" oncontextmenu="return false;" background="https://i.ibb.co/GRLMg9h/logo.png"></iframe>
+  <iframe id="contentFrame" src="" height="750" width="100%" oncontextmenu="return false;" background="https://script.google.com/macros/s/AKfycbzVbLVdK1Xet0Gpm8eDWm1ZjHGdWZyxlb00FqMn4IaIN9ZOf8bgVGxGr6QDfGo3xYli/exec"></iframe>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -291,6 +289,12 @@ const button0 = document.getElementById("button0");
   const button18 = document.getElementById("button18");
   const button19 = document.getElementById("button19");
   const contentFrame = document.getElementById("contentFrame");
+
+  button0.addEventListener("click", function(event) {
+    event.preventDefault();
+    contentFrame.src = "https://script.google.com/macros/s/AKfycbzVbLVdK1Xet0Gpm8eDWm1ZjHGdWZyxlb00FqMn4IaIN9ZOf8bgVGxGr6QDfGo3xYli/exec";
+  });
+
 
   button1.addEventListener("click", function(event) {
     event.preventDefault();
@@ -387,11 +391,7 @@ const button0 = document.getElementById("button0");
     contentFrame.src = "https://script.google.com/macros/s/AKfycbyT4m_lHYTNpXLVJqav0BZgdTySo6_r5pnkOmHNDkRgq0jjlIumMTOTOl3-76WMFgRb/exec";
   });
 
-  button0.addEventListener("click", function(event) {
-  event.preventDefault();
-  // Reload the current iframe source (which is the same page)
-  contentFrame.contentWindow.location.reload();
-});
+
   
   (function($) {
       $(function() {
